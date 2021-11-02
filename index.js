@@ -4,7 +4,13 @@ require('dotenv').config()
 const { PORT } = process.env
 const app = express();
 
-app.get('/', (req, res) =>{console.log('oi')})
+const taskRouter = require('./src/routers/taskRouter')
+
+app.get('/', (_req, res) =>{
+  res.send('Hello-Word')
+})
+
+app.use('/task', taskRouter);
 
 app.listen(PORT, ()=>{
   console.log('listening on port', PORT)
