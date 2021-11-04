@@ -19,8 +19,8 @@ const getTasksById = async (req, res) => {
 
 const editTask = async (req, res) => {
   const { id } = req.params;
-  const { task } = req.body;
-  const result = await taskService.editTask(id, task);
+  const { task, date } = req.body;
+  const result = await taskService.editTask(id, task, date);
   return res.status(200).json(result);
 };
 

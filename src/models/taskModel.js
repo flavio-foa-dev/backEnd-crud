@@ -20,11 +20,11 @@ const getTasksById = async (id) => {
   return result;
 };
 
-const editTask = async (id, task) => {
+const editTask = async (id, task, date) => {
   if (!ObjectId.isValid(id)) return null;
   const db = await connection();
   const result = await db.collection('notes').findOneAndUpdate(
-    { _id: ObjectId(id) }, { $set: { task } }, { returnOriginal: false },
+    { _id: ObjectId(id) }, { $set: { task, date } }, { returnOriginal: false },
   );
 
   return result.value;
