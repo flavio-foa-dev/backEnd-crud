@@ -15,8 +15,8 @@ const getTasksById = async (id) => {
   return result;
 };
 
-const editTask = async (id, task, date) => {
-  const result = await taskModel.editTask(id, task, date);
+const editTask = async (id, task, date, status) => {
+  const result = await taskModel.editTask(id, task, date, status);
   return result;
 };
 

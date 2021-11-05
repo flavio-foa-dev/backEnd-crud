@@ -3,7 +3,7 @@ const connection = require('./connectionMongo');
 
 const addTasks = async (task, date) => {
   const db = await connection();
-  const result = await db.collection('notes').insertOne({ task, date });
+  const result = await db.collection('notes').insertOne({ task, date, status: 'Pendente' });
   return result;
 };
 
@@ -20,11 +20,11 @@ const getTasksById = async (id) => {
   return result;
 };
 
-const editTask = async (id, task, date) => {
+const editTask = async (id, task, date, status) => {
   if (!ObjectId.isValid(id)) return null;
   const db = await connection();
   const result = await db.collection('notes').findOneAndUpdate(
-    { _id: ObjectId(id) }, { $set: { task, date } }, { returnOriginal: false },
+    { _id: ObjectId(id) }, { $set: { task, date, status } }, { returnOriginal: false },
   );
 
   return result.value;
