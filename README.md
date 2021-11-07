@@ -29,7 +29,7 @@ Como o time de desenvolvimento utiliza a Stack MERN para criar suas aplicações
 2. Entre no diretório que acabou de criar e depois clone o projeto:
 ```cmd
   cd projetos
-  git clone git@github.com:ebytr-backend.git
+  git@github.com:Flavio-Oliveira-Andrade/backEnd-Ebytr-.git
 ```
 
 3. Abra o diretório do projeto clonado.
