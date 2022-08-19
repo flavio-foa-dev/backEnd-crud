@@ -1,5 +1,5 @@
 # backEnd-Ebytr-
-### Boas vindas ao repositório do projeto Ebytr Back-end !
+### Boas vindas ao repositório do projeto Back-end !
 
 ### Descrição:
 
