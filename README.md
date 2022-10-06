@@ -1,5 +1,5 @@
 # backEnd-Ebytr-
-### Boas vindas ao repositório do projeto Back-end !
+### Boas vindas ao repositório do projeto Back-end!
 
 ### Descrição:
 
@@ -48,3 +48,4 @@ Como o time de desenvolvimento utiliza a Stack MERN para criar suas aplicações
 ```
 
 ---
+
